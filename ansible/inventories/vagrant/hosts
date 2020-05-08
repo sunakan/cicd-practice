@@ -1,0 +1,13 @@
+[ci_grp]
+ci
+
+[cd_grp]
+cd
+
+[app_grp]
+dev
+
+[all:children]
+ci_grp
+cd_grp
+app_grp
