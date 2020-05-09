@@ -6,8 +6,21 @@ pipeline {
     stage('てすと') {
       steps {
         sh 'echo HelloWorld'
-        sh 'echo HelloWorld'
-        echo '${MESSAGE}'
+      }
+    }
+    stage('すてーじ2') {
+      steps {
+        echo 'Hello'
+      }
+    }
+    stage('てすと2') {
+      steps {
+        sh 'pwd'
+      }
+    }
+    stage('てすと3') {
+      steps {
+        sh 'ls -al'
       }
     }
   }
