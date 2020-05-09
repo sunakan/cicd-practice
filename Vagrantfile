@@ -7,7 +7,7 @@ VAGRANT_BOX_UBUNTU  = 'bento/ubuntu-18.04'
 VAGRANT_BOX_DEFAULT = VAGRANT_BOX_UBUNTU
 
 vm_specs = [
-  { name: 'ci',  ip: '192.168.2.11', cpus: 2, memory: 512*5, sync_dir: 'ci-codes' },
+  { name: 'ci',  ip: '192.168.2.11', cpus: 2, memory: 512*8, sync_dir: 'ci-codes' },
   { name: 'cd',  ip: '192.168.2.12', cpus: 2, memory: 512*5, sync_dir: 'cd-codes' },
   { name: 'dev', ip: '192.168.2.13', cpus: 1, memory: 512*2, },
 ]

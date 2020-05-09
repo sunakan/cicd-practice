@@ -26,5 +26,9 @@ define ssh-option
 endef
 ansible: chmod
 	ssh $(call ssh-option,ansible,${ANSIBLE_IP})
+ci: chmod
+	ssh $(call ssh-option,ci,${CI_IP})
+cd: chmod
+	ssh $(call ssh-option,cd,${CD_IP})
 
 clean:
